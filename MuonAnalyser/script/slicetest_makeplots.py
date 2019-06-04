@@ -721,11 +721,11 @@ branch_list=["lumi","run","event","muonpt","muoneta","muonphi","muoncharge","muo
 "chamber_propME11","ring_propME11","has_propGE11","roll_propGE11","chamber_propGE11",  "dphi_CSCL1_GE11L1",
 "dphi_fitCSCL1_GE11L1","dphi_CSCSeg_GE11Rechit","dphi_keyCSCRechit_GE11Rechit","dphi_CSCRechits_GE11Rechit","dphi_propCSC_propGE11"]
 chain = ROOT.TChain("SliceTestAnalysis/MuonData")
-#chain.Add('/eos/uscms/store/user/mkhurana/GEMCSCBending_2018C/out_ana_10*.root')
+chain.Add('root://cmseos.fnal.gov//store/user/mkhurana/GEMCSCBending_2018C/*.root')
 #chain.Add("slicetest_ana.root")
 #chain.Add("2018C_out_ana_v2.root")
 #chain.Add("out_ana_all_2018C.root")
-chain.Add("GEMCSCBending_2018C_v11.root")
+#chain.Add("/uscms/homes/r/rmueller/GEM/CMSSW_10_1_5/src/GEMCSCBendingAnalyzer/MuonAnalyser/data/GEM_test.root")
 #chain.Add("GEMCSCAan_Run2018D_ZMu_323470-323470_all.root")
 #chain.Add("GEMCSCBending_doublemuon_2018C_v1.root")
 #plotdir = "GEMCSCBending_2018C_doubleMuon_singlemuon_plots/"
